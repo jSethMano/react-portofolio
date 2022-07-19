@@ -1,7 +1,16 @@
-import "./App.css";
+import React from "react";
+import Header from "./components/Header";
+import HeroSection from "./components/HeroSection";
+import MainSection from "./components/MainSection";
 
-function App() {
-  return <div className="App">Hello</div>;
-}
+const App = () => {
+  return (
+    <React.Fragment>
+      <Header />
+      <HeroSection />
+      <MainSection />
+    </React.Fragment>
+  );
+};
 
 export default App;
