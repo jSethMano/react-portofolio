@@ -1,0 +1,25 @@
+@import "./variables";
+
+.button-design {
+  padding: 10px 0;
+  width: 50%;
+  text-align: center;
+  text-decoration: none;
+  border: 1px solid $primary-color;
+  background-color: transparent;
+  font-family: $button-font;
+  font-size: 16px;
+  cursor: pointer;
+  @include dropShadow();
+
+  &:hover {
+    background-color: white;
+  }
+}
+
+.section-container {
+  @include defaultMargin();
+
+  height: 100%;
+  //   background-color: rgb(226, 226, 226);
+}

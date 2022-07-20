@@ -1,0 +1,29 @@
+@import "./variables";
+
+.heading {
+  @include defaultPadding();
+  margin-bottom: 5%;
+  font-family: $heading-font;
+  font-size: $size-medium;
+  font-weight: 900;
+  color: $primary-color;
+}
+
+.logo-container {
+  @include defaultPadding();
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  height: 100%;
+  width: 100%;
+}
+
+.img-container {
+  width: 30%;
+  margin-bottom: 5%;
+  img {
+    margin: 0 auto;
+    display: block;
+  }
+}

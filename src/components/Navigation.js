@@ -1,11 +1,13 @@
 import React from "react";
 import Select from "react-select";
 
+import style from "./styles/Navigation.module.scss";
+
 const SELECT_OPTIONS = [
-  {
-    default: "PROFILE",
-    value: "about",
-  },
+  // {
+  //   default: "PROFILE",
+  //   value: "about",
+  // },
   {
     value: "ui",
     label: "UI",
@@ -32,8 +34,32 @@ const Navigation = (props) => {
     props.selectedMenu(value.target.textContent.toLowerCase());
   };
 
+  const selectStyle = {
+    control: (styling) => ({
+      ...styling,
+      backgroundColor: "none",
+      border: 0,
+      color: "red",
+      boxShadow: "none",
+    }),
+    container: (styling) => ({
+      ...styling,
+      backgroundColor: "none",
+      border: 0,
+      color: "#ffd369",
+      width: "140px",
+      textAlign: "center",
+    }),
+    placeholder: (styling) => ({ ...styling, color: "#3f1f45" }),
+    indicatorSeparator: (styling) => ({ ...styling, visibility: "hidden" }),
+    dropdownIndicator: (styling) => ({
+      ...styling,
+      color: "#3f1f45",
+    }),
+  };
+
   return (
-    <div>
+    <div className={style["nav-container"]}>
       <ul>
         <li>
           <a onClick={navMenuHandler} href="#">
@@ -41,8 +67,9 @@ const Navigation = (props) => {
           </a>
         </li>
         <Select
+          styles={selectStyle}
           onChange={onOptionSelectedHandler}
-          placeholder="Profiles"
+          placeholder="PROJECTS"
           options={SELECT_OPTIONS}
         />
         <li>

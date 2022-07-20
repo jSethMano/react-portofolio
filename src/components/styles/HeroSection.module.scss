@@ -1,0 +1,34 @@
+@import "./variables";
+
+.hero-container {
+  background-color: $gray-shade;
+  @include defaultMargin();
+  @include defaultPadding();
+  @include defaultFlex(center, center);
+  height: 40vh;
+
+  .text-wrapper {
+    @include defaultFlex(center, center);
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+    h1 {
+      font-family: $heading-font;
+      color: $primary-color;
+      font-weight: 900;
+      font-size: $size-heading;
+    }
+  }
+
+  .image-wrapper {
+    @include defaultFlex(center, center);
+    flex-direction: column;
+    width: 50%;
+    height: 105%;
+    gap: 20px;
+    img {
+      width: 50%;
+      height: 70%;
+    }
+  }
+}

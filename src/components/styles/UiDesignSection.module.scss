@@ -1,0 +1,38 @@
+@import "./variables";
+
+.heading {
+  @include defaultPadding();
+  margin-bottom: 5%;
+  font-family: $heading-font;
+  font-size: $size-medium;
+  font-weight: 900;
+  color: $primary-color;
+}
+
+.content-container {
+  @include defaultPadding();
+
+  display: flex;
+  justify-content: flex-start;
+  gap: 7%;
+  margin-bottom: 10px;
+  border-bottom: 2px solid $accent-color;
+  img {
+    width: 700px;
+    margin-bottom: 3%;
+  }
+  .caption-container {
+    color: $secondary-color;
+    width: 30%;
+    h1 {
+      font-family: $button-font;
+      font-size: 36px;
+      margin-bottom: 3%;
+    }
+    p {
+      font-family: $button-font;
+      font-size: $size-paragraph;
+      width: 80%;
+    }
+  }
+}

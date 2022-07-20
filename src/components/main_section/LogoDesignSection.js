@@ -9,6 +9,8 @@ import thoughtWiserLogo from "../../assets/content-section/thought-wiser.png";
 import quokkaLogo from "../../assets/content-section/quokka.png";
 import sankiyapaLogo from "../../assets/content-section/sankiyapa.png";
 
+import styles from "../styles/LogoDesignSection.module.scss";
+
 const LOGO_ARRAY = [
   {
     logoName: "beMyGenie",
@@ -37,7 +39,7 @@ const LOGO_ARRAY = [
 ];
 
 const logoSectionContent = LOGO_ARRAY.map((content) => (
-  <div>
+  <div className={styles["img-container"]}>
     <img src={content.logoImg} alt="Logo Design"></img>
   </div>
 ));
@@ -45,8 +47,8 @@ const logoSectionContent = LOGO_ARRAY.map((content) => (
 const LogoDesignSection = () => {
   return (
     <SectionsWrapper>
-      <h1>logo designs</h1>
-      {logoSectionContent}
+      <h1 className={styles["heading"]}>logo designs</h1>
+      <div className={styles["logo-container"]}>{logoSectionContent}</div>
     </SectionsWrapper>
   );
 };

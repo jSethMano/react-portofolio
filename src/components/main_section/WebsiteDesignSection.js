@@ -1,10 +1,13 @@
 import React from "react";
 
 import SectionsWrapper from "../wrapper/SectionsWrapper";
+import ButtonWrapper from "../wrapper/ButtonWrapper";
 
 import oneDreamWebsite from "../../assets/web-section/one-dream.png";
 import cryptoAPIWebsite from "../../assets/web-section/crypto-api.png";
 import reactNewsWebsite from "../../assets/web-section/react-news.png";
+
+import styles from "../styles/WebsiteDesignSection.module.scss";
 
 const WEBSITE_ARRAY = [
   {
@@ -28,18 +31,20 @@ const WEBSITE_ARRAY = [
 ];
 
 const websitesSection = WEBSITE_ARRAY.map((content) => (
-  <div>
+  <div className={styles["content-container"]}>
     <img src={content.websiteImg} alt="Website Designs"></img>
-    <h1>{content.websiteTitle}</h1>
-    <p>{content.websiteDesc}</p>
-    <button>View site</button>
+    <div className={styles["caption-container"]}>
+      <h1>{content.websiteTitle}</h1>
+      <p>{content.websiteDesc}</p>
+      <ButtonWrapper>View site</ButtonWrapper>
+    </div>
   </div>
 ));
 
 const WebsiteDesignSection = () => {
   return (
     <SectionsWrapper>
-      <h1>website designs</h1>
+      <h1 className={styles["heading"]}>website designs</h1>
       {websitesSection}
     </SectionsWrapper>
   );

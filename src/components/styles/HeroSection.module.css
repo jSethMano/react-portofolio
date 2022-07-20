@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700;900&display=swap");
+.hero-container {
+  background-color: rgba(243, 243, 243, 0.5058823529);
+  width: 70vw;
+  margin: 0 auto;
+  padding: 0 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40vh;
+}
+.hero-container .text-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 50%;
+  height: 100%;
+}
+.hero-container .text-wrapper h1 {
+  font-family: "Playfair Display", serif;
+  color: #ffd369;
+  font-weight: 900;
+  font-size: 64px;
+}
+.hero-container .image-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 50%;
+  height: 105%;
+  gap: 20px;
+}
+.hero-container .image-wrapper img {
+  width: 50%;
+  height: 70%;
+}/*# sourceMappingURL=HeroSection.module.css.map */

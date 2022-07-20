@@ -1,0 +1,32 @@
+@import "./variables";
+
+.about-section-container {
+  @include defaultFlex(center, center);
+  flex-direction: column;
+  text-align: center;
+  margin-top: 5%;
+  .text-container {
+    width: 50%;
+    margin-bottom: 5%;
+    h1 {
+      font-family: $heading-font;
+      font-size: $size-heading;
+      font-weight: 900;
+      color: $primary-color;
+    }
+    p {
+      font-family: $button-font;
+      font-size: $size-paragraph;
+      color: $secondary-color;
+    }
+  }
+  .logo-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 30%;
+    height: 100px;
+    // background-color: rebeccapurple;
+  }
+}

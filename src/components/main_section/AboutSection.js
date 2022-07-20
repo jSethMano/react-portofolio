@@ -10,23 +10,30 @@ import xdLogo from "../../assets/main-section/skills-logo/xd-logo.png";
 import aiLogo from "../../assets/main-section/skills-logo/ai-logo.png";
 import psLogo from "../../assets/main-section/skills-logo/ps-logo.png";
 
+import styles from "../styles/AboutSection.module.scss";
+
 const AboutSection = () => {
   return (
     <SectionsWrapper>
-      <h1>about me</h1>
-      <p>
-        Self taught individual who has a skill on creating visual designs and
-        will help you create your dream website
-      </p>
-      <div>
-        <img src={htmlLogo} alt="HTML Icon"></img>
-        <img src={cssLogo} alt="CSS Icon"></img>
-        <img src={jsLogo} alt="Javascript Icon"></img>
-        <img src={reactLogo} alt="React JS Icon"></img>
-        <img src={figmaLogo} alt="Figma Icon"></img>
-        <img src={xdLogo} alt="Adobe XD Icon"></img>
-        <img src={aiLogo} alt="Adobe Illustrator Icon"></img>
-        <img src={psLogo} alt="Adobe Photoshop Icon"></img>
+      <div className={styles["about-section-container"]}>
+        <div className={styles["text-container"]}>
+          <h1>about me</h1>
+          <p>
+            Self taught individual who has a skill on creating visual designs
+            and will help you create your dream website
+          </p>
+        </div>
+
+        <div className={styles["logo-container"]}>
+          <img src={htmlLogo} alt="HTML Icon"></img>
+          <img src={cssLogo} alt="CSS Icon"></img>
+          <img src={jsLogo} alt="Javascript Icon"></img>
+          <img src={reactLogo} alt="React JS Icon"></img>
+          <img src={figmaLogo} alt="Figma Icon"></img>
+          <img src={xdLogo} alt="Adobe XD Icon"></img>
+          <img src={aiLogo} alt="Adobe Illustrator Icon"></img>
+          <img src={psLogo} alt="Adobe Photoshop Icon"></img>
+        </div>
       </div>
     </SectionsWrapper>
   );

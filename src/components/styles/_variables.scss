@@ -1,0 +1,37 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700;900&display=swap");
+
+$primary-color: #ffd369;
+$secondary-color: #3f1f45;
+$text-color: #1e1e1e;
+$accent-color: #f5eded;
+$gray-shade: #f3f3f381;
+
+$heading-font: "Playfair Display", serif;
+$paragraph-font: " Inter ", sans-serif;
+$button-font: "Work Sans", sans-serif;
+
+$size-heading: 64px;
+$size-medium: 48px;
+$size-paragraph: 18px;
+$size-small: 16px;
+
+@mixin defaultMargin() {
+  width: 70vw;
+  margin: 0 auto;
+}
+
+@mixin defaultPadding() {
+  padding: 0 40px;
+}
+
+@mixin defaultFlex($justify, $align) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+@mixin dropShadow() {
+  box-shadow: 2px 4px 33px 3px rgba(0, 0, 0, 0.05);
+}

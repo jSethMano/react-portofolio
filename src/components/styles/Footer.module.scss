@@ -1,0 +1,10 @@
+@import "./variables";
+
+footer {
+  @include defaultMargin();
+  font-family: $button-font;
+  padding: 25px 0 10px 0;
+  display: flex;
+  justify-content: space-between;
+  color: gray;
+}

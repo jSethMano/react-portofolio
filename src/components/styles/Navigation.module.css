@@ -1,0 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700;900&display=swap");
+.nav-container {
+  box-shadow: 2px 4px 33px 3px rgba(0, 0, 0, 0.05);
+  width: 43%;
+  margin: 10px 15%;
+  padding: 0 5%;
+  color: #3f1f45;
+  font-family: "Work Sans", sans-serif;
+  font-size: 16px;
+}
+.nav-container ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-decoration: none;
+  list-style-type: none;
+}
+.nav-container ul a {
+  text-decoration: none;
+}/*# sourceMappingURL=Navigation.module.css.map */

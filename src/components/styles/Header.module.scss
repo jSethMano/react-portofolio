@@ -1,0 +1,11 @@
+@import "./variables";
+
+.header-container {
+  @include defaultMargin();
+
+  padding: 10px 40px;
+  background-color: $gray-shade;
+  img {
+    width: 50px;
+  }
+}
