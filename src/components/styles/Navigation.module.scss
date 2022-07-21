@@ -8,6 +8,11 @@
   color: $secondary-color;
   font-family: $button-font;
   font-size: 16px;
+
+  @include md {
+    width: 80%;
+    margin: 10px auto;
+  }
   ul {
     @include defaultFlex(space-around, center);
     text-decoration: none;

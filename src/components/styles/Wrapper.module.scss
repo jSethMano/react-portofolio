@@ -1,19 +1,26 @@
 @import "./variables";
-
+@import "./breakpoints";
 .button-design {
   padding: 10px 0;
   width: 50%;
   text-align: center;
   text-decoration: none;
-  border: 1px solid $primary-color;
-  background-color: transparent;
+  // border: 1px solid $secondary-color;
+  color: white;
+  border: none;
+  background-color: $primary-color;
   font-family: $button-font;
   font-size: 16px;
   cursor: pointer;
   @include dropShadow();
 
+  @include xl {
+    width: 100%;
+  }
+
   &:hover {
-    background-color: white;
+    background-color: $secondary-color;
+    transition: 0.3s linear;
   }
 }
 

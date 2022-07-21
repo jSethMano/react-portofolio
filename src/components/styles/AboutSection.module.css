@@ -27,8 +27,12 @@
 .about-section-container .logo-container {
   display: flex;
   justify-content: space-around;
-  flex-wrap: wrap;
   align-items: center;
   width: 30%;
   height: 100px;
+}
+@media (max-width: 1200px) {
+  .about-section-container .logo-container {
+    width: 50%;
+  }
 }/*# sourceMappingURL=AboutSection.module.css.map */

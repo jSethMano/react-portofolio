@@ -15,20 +15,27 @@ const WEBSITE_ARRAY = [
     websiteDesc:
       "The goal is to create an interface design which showcases the company’s goal and vision.",
     websiteImg: oneDreamWebsite,
+    link: "https://onedreamentertainment.com/",
   },
   {
-    websiteTitle: "Landing page for a talent agency",
+    websiteTitle: "A personal project playing with Coingecko API",
     websiteDesc:
-      "The goal is to create an interface design which showcases the company’s goal and vision.",
+      "Learning API calls with cryptocurrency, showing the top 10 trending coins/token made with HTML, CSS and Vanilla JS.",
     websiteImg: cryptoAPIWebsite,
+    link: "https://jsethmano.github.io/coingecko-api/",
   },
   {
-    websiteTitle: "Landing page for a talent agency",
-    websiteDesc:
-      "The goal is to create an interface design which showcases the company’s goal and vision.",
+    websiteTitle: "React JS dynamic web application",
+    websiteDesc: "Showcasing headines from different sources using News API.",
     websiteImg: reactNewsWebsite,
+    link: "https://onedreamentertainment.com/",
   },
 ];
+
+const viewSiteHandler = (e) => {
+  const siteUrl = e.target.value;
+  window.open(siteUrl, "_blank");
+};
 
 const websitesSection = WEBSITE_ARRAY.map((content) => (
   <div className={styles["content-container"]}>
@@ -36,7 +43,9 @@ const websitesSection = WEBSITE_ARRAY.map((content) => (
     <div className={styles["caption-container"]}>
       <h1>{content.websiteTitle}</h1>
       <p>{content.websiteDesc}</p>
-      <ButtonWrapper>View site</ButtonWrapper>
+      <ButtonWrapper value={content.link} onClickHandler={viewSiteHandler}>
+        View site
+      </ButtonWrapper>
     </div>
   </div>
 ));

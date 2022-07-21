@@ -7,6 +7,9 @@
   font-size: $size-medium;
   font-weight: 900;
   color: $primary-color;
+  @include sm {
+    margin-bottom: 10%;
+  }
 }
 
 .logo-container {
@@ -17,6 +20,11 @@
   justify-content: space-between;
   height: 100%;
   width: 100%;
+  @include sm {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .img-container {
@@ -25,5 +33,8 @@
   img {
     margin: 0 auto;
     display: block;
+  }
+  @include sm {
+    width: 100%;
   }
 }

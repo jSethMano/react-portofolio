@@ -39,14 +39,13 @@ const Navigation = (props) => {
       ...styling,
       backgroundColor: "none",
       border: 0,
-      color: "red",
       boxShadow: "none",
     }),
     container: (styling) => ({
       ...styling,
       backgroundColor: "none",
       border: 0,
-      color: "#ffd369",
+      color: "black",
       width: "140px",
       textAlign: "center",
     }),
@@ -77,6 +76,7 @@ const Navigation = (props) => {
             onClick={navMenuHandler}
             target="_blank"
             href="https://github.com/jSethMano"
+            rel="noreferrer"
           >
             GITHUB
           </a>

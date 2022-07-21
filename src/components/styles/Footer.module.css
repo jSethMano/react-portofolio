@@ -9,4 +9,17 @@ footer {
   display: flex;
   justify-content: space-between;
   color: gray;
+}
+@media (max-width: 720px) {
+  footer {
+    width: 90vw;
+  }
+}
+@media (max-width: 480px) {
+  footer {
+    margin: 0 auto;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+  }
 }/*# sourceMappingURL=Footer.module.css.map */

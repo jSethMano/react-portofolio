@@ -1,4 +1,5 @@
 @import "./variables";
+@import "./breakpoints";
 
 .heading {
   @include defaultPadding();
@@ -7,32 +8,77 @@
   font-size: $size-medium;
   font-weight: 900;
   color: $primary-color;
+  @include sm {
+    text-align: center;
+  }
 }
 
 .content-container {
   @include defaultPadding();
-
   display: flex;
   justify-content: flex-start;
   gap: 7%;
   margin-bottom: 10px;
   border-bottom: 2px solid $accent-color;
+  @include md {
+    margin-bottom: 50px;
+    border-bottom: none;
+  }
+  @include sm {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 80%;
+    margin: 5% auto;
+    padding: 25px 0;
+    @include dropShadow();
+  }
   img {
     width: 700px;
     margin-bottom: 3%;
+    @include xl {
+      width: 400px;
+    }
+    @include lg {
+      width: 300px;
+    }
   }
   .caption-container {
     color: $secondary-color;
     width: 30%;
+    @include xl {
+      width: 40%;
+    }
+    @include lg {
+      width: 50%;
+    }
+    @include sm {
+      @include defaultPadding();
+      width: 100%;
+      text-align: center;
+    }
     h1 {
       font-family: $button-font;
       font-size: 36px;
       margin-bottom: 3%;
+      @include lg {
+        font-size: 32px;
+      }
+      @include sm {
+        font-size: 28px;
+      }
     }
     p {
       font-family: $button-font;
       font-size: $size-paragraph;
       width: 80%;
+      margin-bottom: 5%;
+      @include lg {
+        font-size: $size-small;
+      }
+      @include sm {
+        width: 100%;
+      }
     }
   }
 }
