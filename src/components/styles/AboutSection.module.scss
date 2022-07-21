@@ -9,16 +9,26 @@
   .text-container {
     width: 50%;
     margin-bottom: 5%;
+    @include xs {
+      width: 100%;
+    }
     h1 {
       font-family: $heading-font;
       font-size: $size-heading;
       font-weight: 900;
       color: $primary-color;
+      @include xs {
+        font-size: 28px;
+        margin-bottom: 5%;
+      }
     }
     p {
       font-family: $button-font;
       font-size: $size-paragraph;
       color: $secondary-color;
+      @include xs {
+        font-size: $size-small;
+      }
     }
   }
   .logo-container {

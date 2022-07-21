@@ -15,12 +15,27 @@
     width: 90vw;
   }
 }
+@media (max-width: 320px) {
+  .header-container {
+    padding: 10px 10px 10px 10px;
+  }
+}
 .header-container img {
   width: 50px;
+}
+@media (max-width: 320px) {
+  .header-container img {
+    width: 40px;
+  }
 }
 .header-container .nav-buttons {
   display: flex;
   gap: 30px;
+}
+@media (max-width: 320px) {
+  .header-container .nav-buttons {
+    display: none;
+  }
 }
 .header-container .nav-buttons button {
   width: 100%;

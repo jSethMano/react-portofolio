@@ -7,13 +7,22 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  @include xs {
+    padding: 10px 10px 10px 10px;
+  }
   img {
     width: 50px;
+    @include xs {
+      width: 40px;
+    }
   }
 
   .nav-buttons {
     display: flex;
     gap: 30px;
+    @include xs {
+      display: none;
+    }
 
     button {
       width: 100%;

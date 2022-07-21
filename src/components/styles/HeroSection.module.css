@@ -52,6 +52,11 @@
     font-size: 36px;
   }
 }
+@media (max-width: 320px) {
+  .hero-container .text-wrapper h1 {
+    font-size: 28px;
+  }
+}
 .hero-container .image-wrapper {
   display: flex;
   justify-content: center;

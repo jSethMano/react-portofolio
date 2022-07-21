@@ -16,6 +16,11 @@
     margin: 10px auto;
   }
 }
+@media (max-width: 320px) {
+  .nav-container {
+    width: 100%;
+  }
+}
 .nav-container ul {
   display: flex;
   justify-content: space-around;
