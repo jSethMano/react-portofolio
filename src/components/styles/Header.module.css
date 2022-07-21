@@ -4,8 +4,11 @@
 .header-container {
   width: 70vw;
   margin: 0 auto;
-  padding: 10px 40px;
+  padding: 10px 180px 10px 40px;
   background-color: rgba(243, 243, 243, 0.5058823529);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 @media (max-width: 720px) {
   .header-container {
@@ -14,4 +17,20 @@
 }
 .header-container img {
   width: 50px;
+}
+.header-container .nav-buttons {
+  display: flex;
+  gap: 30px;
+}
+.header-container .nav-buttons button {
+  width: 100%;
+  padding: 10px 20px;
+  font-family: "Work Sans", sans-serif;
+  font-weight: bold;
+  color: #3f1f45;
+  background-color: transparent;
+  border: none;
+}
+.header-container .nav-buttons button:hover {
+  cursor: pointer;
 }/*# sourceMappingURL=Header.module.css.map */

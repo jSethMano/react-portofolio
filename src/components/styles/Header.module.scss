@@ -2,10 +2,30 @@
 
 .header-container {
   @include defaultMargin();
-
-  padding: 10px 40px;
+  padding: 10px 180px 10px 40px;
   background-color: $gray-shade;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   img {
     width: 50px;
+  }
+
+  .nav-buttons {
+    display: flex;
+    gap: 30px;
+
+    button {
+      width: 100%;
+      padding: 10px 20px;
+      font-family: $button-font;
+      font-weight: bold;
+      color: $secondary-color;
+      background-color: transparent;
+      border: none;
+      &:hover {
+        cursor: pointer;
+      }
+    }
   }
 }
