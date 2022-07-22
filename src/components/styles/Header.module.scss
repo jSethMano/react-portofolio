@@ -3,6 +3,7 @@
 .header-container {
   @include defaultMargin();
   padding: 10px 180px 10px 40px;
+  width: 80%;
   background-color: $gray-shade;
   display: flex;
   justify-content: space-between;
