@@ -7,10 +7,10 @@ const Header = () => {
   return (
     <header className={styles["header-container"]}>
       <img src={Logo} alt="Website logo"></img>
-      <div className={styles["nav-buttons"]}>
+      {/* <div className={styles["nav-buttons"]}>
         <button>PORTFOLIO</button>
         <button>RESUME</button>
-      </div>
+      </div> */}
     </header>
   );
 };
