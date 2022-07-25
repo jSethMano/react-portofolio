@@ -3,7 +3,7 @@
 .header-container {
   @include defaultMargin();
   padding: 10px 180px 10px 40px;
-  width: 80%;
+  width: 70%;
   background-color: $gray-shade;
   display: flex;
   justify-content: space-between;
@@ -11,7 +11,7 @@
 
   @include xs {
     width: 90vw;
-    // padding: 10px 10px 10px 10px;
+    padding: 10px 10px 10px 10px;
   }
   img {
     width: 50px;
