@@ -28,7 +28,7 @@ const WEBSITE_ARRAY = [
     websiteTitle: "React JS dynamic web application",
     websiteDesc: "Showcasing headines from different sources using News API.",
     websiteImg: reactNewsWebsite,
-    link: "https://onedreamentertainment.com/",
+    link: "https://github.com/jSethMano/react-news-api",
   },
 ];
 
