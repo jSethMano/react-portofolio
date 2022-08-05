@@ -6,6 +6,7 @@
   @include defaultMargin();
   @include defaultPadding();
   @include defaultFlex(center, center);
+
   height: 40vh;
   @include sm {
     flex-direction: column;
