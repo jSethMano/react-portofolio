@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import image from "../assets/hero-section/self-image.png";
 import ButtonWrapper from "./wrapper/ButtonWrapper";
 
